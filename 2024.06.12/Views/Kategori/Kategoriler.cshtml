@@ -1,0 +1,15 @@
+﻿@model List<LayerEntity.Entities.Kategori>
+@{
+    ViewData["Title"] = "Kategoriler";
+    Layout = "~/Views/Shared/OnYuzSablon.cshtml";
+}
+
+<h1>Kategoriler</h1>
+<div>
+    @foreach (var kategori in Model)
+    {
+        <div>
+            <a href="#">@kategori.KategoriAdi</a>
+        </div>
+    }
+</div>
